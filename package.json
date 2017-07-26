@@ -1,0 +1,29 @@
+{
+  "name": "konoby-lp",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "pm2 start app.js --attach"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TsubasaK111/konoby-lp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TsubasaK111/konoby-lp/issues"
+  },
+  "engines": {
+    "node": "6.11.1"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "node-uuid": "^1.4.7",
+    "pm2": "^2.5.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express-server": "^0.5.3"
+  }
+}
