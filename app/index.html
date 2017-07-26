@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>codecheck</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-MNRH4J"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MNRH4J');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <header class="check-header">
+      <div class="check-header-container">
+        <nav>
+          <h1><a href="#"><img src="images/codecheck_logo_wht.svg" alt="codecheck"></a></h1>
+          <ul>
+            <li>
+              <a href="#checkForm" class="check-btn transparent-white cvButton01" data-cvtype="trial-01">トライアルを申し込む</a>
+            </li>
+            <li>
+              <a href="#checkForm" class="check-btn transparent-white cvButton02" data-cvtype="inquiry-01">お問合わせ</a>
+            </li>
+            <li>
+              <a href="#checkForm" class="check-btn transparent-white cvButton03" data-cvtype="brochure-01">サービス資料請求</a>
+            </li>
+            <li>
+              <a href="https://app.code-check.io/auth/signin" class="check-btn transparent-white">ログイン</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="check-header-main">
+          <div class="check-title">
+            <span>人事担当者の面接工数を削減する</span>
+            <h2>プログラミングスキルの<br>チェックツール</h2>
+            <p>
+              履歴書だけでエンジニアの技術を判断していませんか？<br>
+              codecheckは人事担当者が判断しづらいエンジニアの<br>
+              スキルを代わりに評価します。
+            </p>
+            <div>
+              <a href="#checkForm" class="check-btn lg transparent-white cvButton01" data-cvtype="trial-02">トライアルを申し込む</a>
+            </div>
+          </div>
+          <div class="check-visual"></div>
+        </div>
+        <div class="check-header-menu-for-mobile">
+          <ul>
+            <li>
+              <a href="#checkForm" class="check-btn transparent-white cvButton01" data-cvtype="trial-m-01">トライアルを申し込む</a>
+            </li>
+            <li>
+              <a href="#checkForm" class="check-btn transparent-white cvButton02" data-cvtype="inquiry-m-01">お問合わせ</a>
+            </li>
+            <li>
+              <a href="#checkForm" class="check-btn transparent-white cvButton03" data-cvtype="brochure-m-01">サービス資料請求</a>
+            </li>
+            <li>
+              <a href="https://app.code-check.io/auth/signin" class="check-btn transparent-white">ログイン</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <div class="check-section white service row">
+          <div class="container">
+            <div class="col-md-6 col-sm-12 content">
+              <h3 class="section-title"><img src="images/codecheck_logo.svg" alt=""></h3>
+              <p>
+                codecheckは、フロントエンド・サーバーサイド言語やアルゴリズムなどのプログラミング試験を提供しています。問題の難易度やカテゴリを選び、求職者に配信、回答後の採点結果を閲覧できます。
+                <br><br>
+                codecheck上に用意されてるプログラミングテストで評価された求職者を面接につなげるので、選考をする人数と、一人あたりの面接にかかる時間を削減し、本来向き合うべき（魅力づけをしたい）求職者に時間を使うことを可能にします。
+              </p>
+
+              <div class="movie-mobile">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DHji_EgY_wo?rel=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+
+              <a href="#checkForm" class="check-btn primary lg cvButton01" data-cvtype="trial-03">トライアルを申し込む</a>
+            </div>
+            <div class="col-md-6 col-sm-12 movie">
+              <div id="player"></div>
+            </div>
+          </div>
+        </div>
+        <div class="check-section gray-light company row">
+          <div class="container">
+            <h5 class="section-title">導入企業様</h5>
+            <ul class="company-list">
+              <li><img src="images/logo_ntt.png" alt=""></li>
+              <li><img src="images/logo_line.png" alt=""></li>
+              <li><img src="images/logo_fujifilm.png" alt=""></li>
+              <li><img src="images/logo_asahi.png" alt=""></li>
+              <li><img src="images/logo_works.png" alt=""></li>
+              <li><img src="images/logo_oro.png" alt=""></li>
+              <li><img src="images/logo_donuts.png" alt=""></li>
+            </ul>
+            <p>エンジニアの最適なフローを各社が導入しています。</p>
+          </div>
+        </div>
+
+        <div class="check-section white about row">
+          <div class="container">
+            <div class="row about-content">
+              <div class="col-md-6 col-sm-12 image left">
+                <h4 class="hidden-md hidden-lg">01</h4>
+                <img src="images/screen01.png" alt="">
+              </div>
+              <div class="col-md-6 col-sm-12 content right">
+                <h4 class="section-title">
+                  <div class="hidden-sm hidden-xs">01</div>様々なプログラミング問題を提供
+                </h4>
+                <p>アルゴリズムや実践アプリ開発など、多岐にわたりスキルを見極められるプリセット問題を10以上ご用意しています。求める人材にあわせて問題の難易度やカテゴリを選ぶことができます。</p>
+              </div>
+            </div>
+            <div class="row about-content">
+              <div class="col-md-6 col-sm-12 content left">
+                <h4 class="section-title">
+                  <div class="hidden-sm hidden-xs">02</div>自動採点でスキルチェック
+                </h4>
+                <p>提出したコードを自動採点する機能を提供しています。テストの結果は点数化しており、開発経験のない人事の方でもエンジニアのスキルが一目でわかります。</p>
+              </div>
+              <div class="col-md-6 col-sm-12 image right">
+                <h4 class="hidden-md hidden-lg">02</h4>
+                <img src="images/screen02.png" alt="">
+              </div>
+            </div>
+            <div class="row about-content">
+              <div class="col-md-6 col-sm-12 image left">
+                <h4 class="hidden-md hidden-lg">03</h4>
+                <img src="images/screen03.png" alt="">
+              </div>
+              <div class="col-md-6 col-sm-12 content right">
+                <h4 class="section-title">
+                  <div class="hidden-sm hidden-xs">03</div>主要な言語、フレームワークに対応
+                </h4>
+                <p>php, python, Scala, Node, C/C++など多数の言語、フレームワークに対応しています。募集要項にあわせ最適な言語を選択できます。</p>
+              </div>
+            </div>
+            <div class="row about-content">
+              <div class="col-xs-12 about-btn">
+                <a href="#checkForm" class="check-btn primary lg cvButton01" data-cvtype="trial-04">トライアルを申し込む</a>
+                <a href="#checkForm" class="check-btn primary lg cvButton02" data-cvtype="inquiry-02">お問合わせ</a>
+                <a href="#checkForm" class="check-btn primary lg cvButton03" data-cvtype="brochure-02">サービス資料請求</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-section primary step row">
+          <div class="container">
+            <h5 class="col-xs-12 step-title">人事の方でも簡単に始められます</h5>
+            <div class="row">
+              <div class="col-xs-4 step-content">
+                <div class="title">STEP<span class="upper">1</span></div>
+                <div class="image"><img src="images/step01.png" alt=""></div>
+                <p>問題選択</p>
+              </div>
+              <div class="col-xs-4 step-content">
+                <div class="title">STEP<span class="upper">2</span></div>
+                <div class="image"><img src="images/step02.png" alt=""></div>
+                <p>求職者に配信</p>
+              </div>
+              <div class="col-xs-4 step-content">
+                <div class="title">STEP<span class="upper">3</span></div>
+                <div class="image"><img src="images/step03.png" alt=""></div>
+                <p>自動採点</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="check-section gray-light entry row">
+          <div class="container">
+            <div class="entry-card">
+              <div class="check-card primary">
+                <div class="card-title">フリートライアル</div>
+                <span>まずはトライアルで使ってみてください。</span>
+                <div class="card-catch">
+                  14日間、無料で、<br>
+                  すべての機能を<br>
+                  使ってみましょう！<br>
+                </div>
+                <a href="#checkForm" class="check-btn primary card-btn cvButton01" data-cvtype="trial-05">トライアルを使ってみる</a>
+              </div>
+
+              <div class="check-card primary-vivid">
+                <div class="card-title">プレミアムプラン</div>
+                <span>採用人数に合わせたプランを提案します。</span>
+                <div class="card-catch">
+                  会社の採用人数に<br>
+                  合わせたプランを <br>
+                  ご提案します。<br>
+                </div>
+                <a href="#checkForm" class="check-btn primary-vivid card-btn cvButton02" data-cvtype="inquiry-03">お問い合わせ</a>
+              </div>
+            </div>
+            <p class="entry-info">まずはトライアルをお問い合わせください！</p>
+          </div>
+        </div>
+        <div class="check-section primary-dark entry-dark row">
+          <div class="container">
+            <div class="row">
+              <p>
+                履歴書上では優秀そうに見えた求職者を面接に進めたら、<br>
+                担当エンジニアに「なんでこんな人を通したんだ」と言われた。
+                <br>
+                <br>
+                そんな経験がある方は
+              </p>
+              <div class="cvButtons">
+                <a href="#checkForm" class="check-btn primary lg cvButton01" data-cvtype="trial-06">トライアルを申し込む</a>
+                <a href="#checkForm" class="check-btn primary cvButton02" data-cvtype="inquiry-04">お問合わせ</a>
+                <a href="#checkForm" class="check-btn primary cvButton03" data-cvtype="brochure-03">サービス資料請求</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-section gray-light check-form row">
+          <div id="checkForm" class="container">
+            <h3>お問い合わせ</h3>
+            <form id="submitForm" action="https://script.google.com/macros/s/AKfycbw3FrJSSRxcshbbQybSjFN_SMkQjtZgj3AG_eJ80G2q_UMrigw/exec" method="post">
+              <div class="form-group has-error">
+                <label>氏名<span class="required">*</span></label>
+                <input type="text" name="name" class="form-control" data-validation="required" data-validation-error-msg="氏名は必須項目です" placeholder="氏名">
+              </div>
+              <div class="form-group has-error">
+                <label>会社名・団体名<span class="required">*</span></label>
+                <input type="text" name="group" class="form-control" placeholder="会社名・団体名" data-validation="required" data-validation-error-msg="会社名・団体名は必須項目です">
+              </div>
+              <div class="form-group has-error">
+                <label>電話番号<span class="required">*</span></label>
+                <input type="text" name="tel" class="form-control" placeholder="電話番号" data-validation="custom" data-validation-regexp="\d{2,4}-\d{2,4}-\d{4}$" data-validation-help="電話番号は-(ハイフン)ありで入力してください" data-validation-error-msg="電話番号の入力に誤りがあります">
+              </div>
+              <div class="form-group has-error">
+                <label>メールアドレス<span class="required">*</span></label>
+                <input type="email" name="email" class="form-control" placeholder="メールアドレス" data-validation="email" data-validation-error-msg="メールアドレスの入力に誤りがあります">
+              </div>
+              <div id="radioGroup" class="form-group has-error">
+                <label>お問い合わせ内容<span class="required">*</span></label>
+                <div class="radio">
+                  <label>
+                    <input id="plan1" type="radio" name="inquiry" value="フリートライアルお申し込み" checked="checked"><span class="checkmark"></span> フリートライアルお申し込み
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input id="plan2" type="radio" name="inquiry" value="お問合わせ"><span class="checkmark"></span> お問合わせ
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input id="plan3" type="radio" name="inquiry" value="資料請求"><span class="checkmark"></span> 資料請求
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input id="plan4" type="radio" name="inquiry" value="その他"><span class="checkmark"></span><span>その他: <input type="text" name="plan_other" class="form-control"></span>
+                  </label>
+                </div>
+                <span id="errorBlock" class="help-block form-error check-error-block">お問い合わせ内容は必須です</span>
+              </div>
+              <div class="form-group has-error">
+                <label for="inquiry-detail">お問い合わせ内容詳細</label>
+                <textarea name="inquiry_detail" class="form-control"></textarea>
+              </div>
+              <div class="checkbox form-group">
+                <label>
+                  <input type="checkbox" data-validation="required" data-validation-error-msg="必須項目です"> <a href="https://app.code-check.io/privacy" target="_blank">個人情報の取り扱いについて</a>に同意する
+                </label>
+              </div>
+              <div class="form-group form-btn">
+                <input type="hidden" id="cvCheck" name="cv_type" value="none">
+                <input id="cv" type="submit" value="送信する" class="check-btn primary">
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="check-footer container">
+      <div class="footer-bottom no-top">
+        <ul>
+          <li><a href="#checkForm">お問い合わせ</a></li>
+          <li><a href="https://givery.co.jp">運営会社</a></li>
+          <li><a href="https://app.code-check.io/terms">利用規約</a></li>
+          <li><a href="https://app.code-check.io/privacy">個人情報の取り扱いについて</a></li>
+        </ul>
+        <p class="copy">&copy;2016 Givery, inc.</p>
+      </div>
+    </footer>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
+    <script src="/bower_components/jquery-form-validator/form-validator/toggleDisabled.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+
+    <script>
+      // This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // This function creates an <iframe> (and YouTube player)
+      // after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '320',
+          width: '100%',
+          videoId: 'DHji_EgY_wo',
+          playerVars:{
+            'rel': '0',
+            'showinfo': '0',
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        event.target.mute();
+      }
+      function onPlayerStateChange(event) {}
+    </script>
+  </body>
+</html>

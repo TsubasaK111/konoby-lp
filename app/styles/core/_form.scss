@@ -1,0 +1,187 @@
+.check-form {
+  form {
+    width: 70%;
+    margin: 20px auto;
+
+    .form-group {
+
+      &+.form-group {
+        margin-top: 30px;
+      }
+
+      &.checkbox {
+        text-align: center;
+        label {
+          color: $color-black;
+        }
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        border: none;
+        background-color: inherit;
+        box-shadow: none;
+        border-radius: 0;
+        border-bottom: solid 2px $color-gray-dark;
+        transition: all 0.2s;
+        &:focus {
+          border-color: $color-primary;
+        }
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+        background-color: inherit;
+        border: solid 2px $color-gray-dark;
+        box-shadow: none;
+        transition: all 0.2s;
+        &:focus {
+          border-color: $color-primary;
+        }
+      }
+
+
+
+      label {
+        font-weight: normal;
+        font-size: 1.6rem;
+        .required {
+          color: $color-red;
+        }
+      }
+
+      .check-error-block {
+        display: none;
+      }
+      .radio {
+        label {
+          display: inline-block;
+          line-height: 40px;
+          margin: 0;
+          padding-left: 40px;
+          position: relative;
+          color: $color-black;
+          input[type="radio"] {
+            display: none;
+            margin: 0;
+            padding: 0;
+
+            &:checked + .checkmark {
+              background-color: transparent;
+              border-width: 2px;
+              &:before {
+                content: "●";
+                color: $color-primary;
+                position: absolute;
+                top: -7px;
+                left: 3px;
+                font-size: 2rem;
+              }
+            }
+          }
+
+          .checkmark {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: solid 1px $color-primary;
+            border-radius: 15px;
+
+            position: absolute;
+            left: 0;
+            top: 5px;
+          }
+
+          span {
+            display: inline-block;
+            input[type="text"] {
+              width: 200px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      &.form-btn {
+        margin-top: 50px;
+        text-align: center;
+        input[type="submit"] {
+          width: 300px;
+          font-size: 2rem;
+        }
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 992px) {
+  .check-form {
+    form {
+      width: 100%;;
+
+      .form-group {
+
+        &+.form-group {
+        }
+
+
+        input[type="text"],
+        input[type="email"] {
+          &:focus {
+          }
+        }
+        textarea {
+          &:focus {
+          }
+        }
+
+
+
+        label {
+          .required {
+          }
+        }
+        .radio {
+          label {
+            line-height: 30px;
+            padding-left: 30px;
+
+            input[type="radio"] {
+
+              &:checked + .checkmark {
+                border-width: 1px;
+                &:before {
+                  top: calc(-50% + 3px);
+                  left: calc(50% - 6px);
+                  font-size: 1.5rem;
+                }
+              }
+            }
+
+            .checkmark {
+              width: 20px;
+              height: 20px;
+            }
+
+            span {
+              input[type="text"] {
+                width: 200px;
+                display: inline-block;
+              }
+            }
+          }
+        }
+
+        &.form-btn {
+          input[type="submit"] {
+            width: 100%;
+            font-size: 2rem;
+          }
+        }
+      }
+
+    }
+  }
+}

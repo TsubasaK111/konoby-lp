@@ -1,0 +1,53 @@
+.check-btn {
+  @extend .btn;
+
+  &.lg {
+    @extend .btn-lg;
+  }
+  &.sm {
+    @extend .btn-sm;
+  }
+  &.xs {
+    @extend .btn-xs;
+  }
+
+  &.primary {
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 100px;
+    transition: all 0.2s;
+    &:hover,&:active {
+      background-color: transparent;
+      color: $color-primary;
+      border: solid 1px $color-primary;
+    }
+
+    &.disabled {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &.primary-vivid {
+    background-color: $color-primary-vivid;
+    color: $color-white;
+    border-radius: 100px;
+    transition: all 0.2s;
+    &:hover,&:active {
+      background-color: transparent;
+      color: $color-primary-vivid;
+      border: solid 1px $color-primary-vivid;
+    }
+  }
+
+  &.transparent-white {
+    background-color: transparent;
+    color: $color-white;
+    border: solid 1px $color-white;
+    border-radius: 100px;
+    transition: all 0.2s;
+    &:hover,&:active {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
+}
